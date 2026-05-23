@@ -1,0 +1,79 @@
+/* AgyObsidian settings-only additions; chat UI stays on ObsidianCode .oc-* legacy. */
+.agy-obsidian-settings-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 14px;
+  padding: 14px;
+  margin: 12px 0;
+  background: var(--background-primary);
+}
+
+.agy-obsidian-settings-hint {
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+  font-size: 12px;
+}
+
+.agy-obsidian-status-line {
+  font-family: var(--font-monospace);
+  font-size: 12px;
+  white-space: pre-wrap;
+  background: var(--background-secondary);
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 260px;
+  overflow: auto;
+}
+
+.oc-send-btn {
+  margin-left: 4px;
+}
+
+.agy-obsidian-visual-progress-status {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.agy-obsidian-visual-progress-status.is-success {
+  color: var(--text-success);
+}
+
+.agy-obsidian-visual-progress-status.is-error {
+  color: var(--text-error);
+}
+
+.agy-obsidian-visual-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.agy-obsidian-visual-progress-item {
+  padding: 6px 8px;
+  border-left: 2px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.agy-obsidian-visual-progress-item.is-running::before {
+  content: "•";
+  color: #D97757;
+  margin-right: 6px;
+}
+
+.agy-obsidian-visual-progress-item.is-success {
+  border-left-color: var(--text-success);
+  color: var(--text-success);
+}
+
+.agy-obsidian-visual-progress-item.is-error {
+  border-left-color: var(--text-error);
+  color: var(--text-error);
+}
