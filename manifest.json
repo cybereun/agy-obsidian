@@ -1,7 +1,7 @@
 {
   "id": "agy-obsidian",
   "name": "Agy-Obsidian",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.5.0",
   "description": "Generate Antigravity-native images from Obsidian notes and embed them in your vault.",
   "author": "Lebi",

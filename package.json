@@ -1,6 +1,6 @@
 {
   "name": "agy-obsidian",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Agy-Obsidian - Antigravity CLI image generation inside Obsidian",
   "main": "main.js",
   "scripts": {

@@ -28,9 +28,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'clean-note',
     slash: '/clean-note',
-    name: 'Note Surgeon',
-    hint: 'Clean and restructure note',
-    description: 'Repair the active note structure: headings, frontmatter, tags, callouts, links, duplication, and extraction candidates.',
+    name: '노트 정리',
+    hint: '노트 구조 및 서식 정리',
+    description: '현재 노트의 제목, 메타데이터, 태그, 중복 내용 등을 깔끔하게 정제합니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -56,9 +56,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'split-note',
     slash: '/split-note',
-    name: 'Nano Note Splitter',
-    hint: 'Split active note into nano notes',
-    description: 'Break a long active note into smaller linked nano notes and leave an index/backlink trail in the original note.',
+    name: '나노 노트 분할기',
+    hint: '긴 노트를 여러 개의 나노 노트로 분할',
+    description: '내용이 긴 노트를 여러 개의 독립적인 나노 노트로 쪼개고 원본 노트에 백링크를 남깁니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -90,9 +90,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'map-vault',
     slash: '/map-vault',
-    name: 'Vault Cartographer',
-    hint: 'Map notes and link gaps',
-    description: 'Map the active note neighborhood or selected folder into clusters, MOC candidates, orphan notes, and missing links.',
+    name: '볼트 지도 생성기',
+    hint: '연관 노트 탐색 및 클러스터링',
+    description: '현재 노트 주변의 연관된 노트들을 탐색하여 클러스터링하고 MOC(지식 지도)를 만들어줍니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -128,9 +128,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'create-skill',
     slash: '/create-skill',
-    name: 'AgyObsidian Skill Forge',
-    hint: 'Create an Obsidian skill',
-    description: 'Design a new Obsidian-native slash skill from a workflow idea, including trigger, inputs, outputs, safety rules, and markdown skill file.',
+    name: 'AgyObsidian 스킬 생성기',
+    hint: '나만의 옵시디언 스킬 제작',
+    description: '사용자의 워크플로우를 분석하여 옵시디언에서 바로 쓸 수 있는 새로운 슬래시 스킬을 만들어줍니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -185,9 +185,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'analyze',
     slash: '/analyze',
-    name: 'Sukgo Decision Lab',
-    hint: 'Think through a decision',
-    description: 'Apply sukgo-style decision frameworks to the active note: steelman, devil, premortem, 6 hats, inversion, 5 whys, matrix, first principles, OODA, and Toulmin.',
+    name: '심층 분석 랩 (Sukgo)',
+    hint: '다각도 심층 분석 및 의사결정',
+    description: '제1원리, 5 Whys, 악마의 대변인 등 다양한 사고 프레임워크를 적용하여 현재 노트를 심층 분석합니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -246,9 +246,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'graph-connect',
     slash: '/graph-connect',
-    name: 'Auto Graph Linker',
-    hint: 'Connect note to the vault graph',
-    description: 'Analyze the active note and connect it to existing related notes in the vault by suggesting and inserting wikilinks.',
+    name: '자동 그래프 연결기',
+    hint: '누락된 링크 자동 찾기',
+    description: '내 볼트 내에서 연결고리가 부족한 노트를 찾아, 문맥상 어울리는 다른 노트와의 [[내부 링크]]를 자동으로 제안합니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -270,9 +270,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'canvas-builder',
     slash: '/canvas-builder',
-    name: 'Canvas Builder',
-    hint: 'Generate Obsidian Canvas',
-    description: 'Create a visual mindmap or flowchart as an Obsidian Canvas file (.canvas) from the active note or prompt.',
+    name: '캔버스 AI 빌더',
+    hint: '마인드맵 및 캔버스 자동 생성',
+    description: '작성 중인 텍스트 노트를 시각적 구조를 갖춘 옵시디언 캔버스(.canvas) 파일로 즉시 변환해줍니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
@@ -302,9 +302,9 @@ export const BUILTIN_SKILLS: BuiltinSkill[] = [
   {
     id: 'ask-vault',
     slash: '/ask-vault',
-    name: 'Vault Q&A (RAG)',
-    hint: 'Ask questions across the entire vault',
-    description: 'Use semantic search and workspace tools to scan your entire vault and answer questions based on your notes.',
+    name: '볼트 전체 질문 (RAG)',
+    hint: '내 볼트 전체를 대상으로 질문',
+    description: '무거운 벡터 DB 없이 로컬 환경에서 옵시디언 볼트 전체를 스캔하고 질문에 대한 답변을 찾습니다.',
     buildPrompt: (request) => [
       COMMON_OBSIDIAN_RULES,
       '',
